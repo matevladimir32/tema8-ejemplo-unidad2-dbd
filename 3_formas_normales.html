@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="exe_effects.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>3. Formas Normales | Normalización: Ejemplo </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Eduvirtual UNAB" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.6 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="exe_effects.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-3"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">Normalización: Ejemplo</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Inicio</a></li>
+   <li><a href="1_introduccin.html" class="no-ch">1. Introducción</a></li>
+   <li><a href="2_normalizacin.html" class="no-ch">2. Normalización</a></li>
+   <li id="active"><a href="3_formas_normales.html" class="active no-ch">3. Formas Normales</a></li>
+   <li><a href="4_formas_normales_ejemplo.html" class="no-ch">4. Formas Normales: Ejemplo</a></li>
+   <li><a href="5_conclusiones_y_referencias.html" class="no-ch">5. Conclusiones y Referencias</a></li>
+   <li><a href="6_repasando.html" class="no-ch">6. Repasando</a></li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="2_normalizacin.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="4_formas_normales_ejemplo.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">3. Formas Normales</h1></header>
+<article class="iDevice_wrapper FreeTextIdevice" id="id7">
+<div class="iDevice emphasis0">
+<div id="ta7_86" class="block iDevice_content">
+<p><img src="3.png" alt="" width="4044" height="1024" /></p>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id8">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Contenido</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta8_121_2" class="block iDevice_content">
+<div class="exe-text"><div class="exe-fx exe-paginated">
+<h2>Primera Forma Normal</h2>
+<p style="text-align: justify;"><span style="font-size: 14pt;">Una tabla está en primera forma normal (1FN) si, y sólo si, todos los dominios de sus atributos contienen valores atómicos, es decir, no hay grupos repetitivos. Un grupo repetitivo es un atributo que puede tener múltiples valores para cada fila de la relación. Son los atributos que tienen forma de tabla. Si una tabla no está en 1fn, hay que eliminar de ella los grupos repetitivos.</span></p>
+<p style="text-align: justify;"><span style="font-size: 14pt;">La forma de eliminar los grupos repetitivos consiste en poner cada uno de ellos como una tabla aparte, heredando la clave primaria de la tabla en la que se encontraban. La clave primaria de esta nueva tabla estará formada por la combinación de la clave primaria que tenía cuando era un grupo repetitivo y la clave primaria que ha heredado en forma de clave ajena. Se dice que conjunto de tablas se encuentra en 1fn si ninguna de ellas tiene grupos repetitivos. (Marqués, 2011).</span></p>
+<h2>Segunda Forma Normal</h2>
+<p style="text-align: justify;"><span style="font-size: 14pt;">Una tabla está en segunda forma normal (2FN) si, y sólo si, está en 1fn y, además, cada atributo que no forma parte de la clave primaria es completamente dependiente de la clave primaria. La 2FN se aplica a las tablas que tienen claves primarias compuestas por dos o más atributos. Si una tabla está en 1fn y su clave primaria es simple (tiene un solo atributo), entonces también está en 2FN.</span></p>
+<p style="text-align: justify;"><span style="font-size: 14pt;">Las tablas que no están en 2FN pueden sufrir anomalías cuando se realizan actualizaciones sobre ellas. Para pasar una tabla en 1fn a 2FN hay que eliminar las dependencias parciales de la clave primaria. Para ello, se eliminan los atributos que son funcionalmente dependientes y se ponen en una nueva tabla con una copia de su determinante. Su determinante estará formado por los atributos de la clave primaria de los que depende. (Marqués, 2011).</span></p>
+<h2 style="text-align: justify;">Tercera Forma Normal</h2>
+<p style="text-align: justify;"><span style="font-size: 14pt;">Una tabla está en tercera forma normal (3fn) si, y sólo si, está en 2fn y, además, cada atributo que no forma parte de la clave primaria no depende transitivamente de la clave primaria. La dependencia x −→ z es transitiva si existen las dependencias x −→ y, y −→ z, siendo x, y, z atributos o conjuntos de atributos de una misma tabla.</span></p>
+<p style="text-align: justify;"><span style="font-size: 14pt;">Aunque las relaciones en 2fn tienen menos redundancias que las relaciones en 1fn, todavía pueden sufrir anomalías frente a las actualizaciones. Para pasar una relación en 2fn a 3fn hay que eliminar las dependencias transitivas. Para ello, se eliminan los atributos que dependen transitivamente y se ponen en una nueva relación con una copia de su determinante (el atributo o atributos no clave de los que depende). (Marqués, 2011)</span></p>
+<h2 style="text-align: justify;"><span style="font-size: 14pt;">Forma normal de Boyce-Codd </span></h2>
+<p style="text-align: justify;"><span style="font-size: 14pt;">Una tabla está en la forma normal de Boyce-Codd (BCFN) si, y sólo si, todo determinante es una clave candidata. La 2fn y la 3fn eliminan las dependencias parciales y las dependencias transitivas de la clave primaria. Pero este tipo de dependencias todavía pueden existir sobre otras claves candidatas, si éstas existen.</span></p>
+<p style="text-align: justify;"><span style="font-size: 14pt;">La BCFN es más fuerte que la 3fn, por lo tanto, toda tabla en BCFN está en 3fn. La violación de la BCFN es poco frecuente ya que se da bajo ciertas condiciones que raramente se presentan. Se debe comprobar si una tabla viola la BCFN en caso de tener dos o más claves candidatas compuestas que tienen al menos un atributo en común. (Marqués, 2011)</span></p>
+<h2 style="text-align: justify;"><span style="font-size: 14pt;">Cómo saber si se ha hecho bien la normalización</span></h2>
+<p style="text-align: justify;"><span style="font-size: 14pt;">En primer lugar, hay que fijarse en que las dependencias funcionales no deseadas han desaparecido. Las únicas dependencias que deben quedar son las que son de la clave primaria completa.</span></p>
+<p style="text-align: justify;"><span style="font-size: 14pt;">Al normalizar una tabla (2FN y 3FN) lo que se hace es obtener distintas proyecciones de ella, para repartir sus columnas en varias tablas de modo que se eliminen las dependencias no deseadas que no son más que redundancias de datos. (Marqués, 2011)</span></p>
+<p style="text-align: center;"><span style="color: #000080;"><strong><span style="font-size: 14pt;">La simplificación debe darse sin que haya perdida de información.</span></strong></span></p>
+</div>
+<p></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="2_normalizacin.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="4_formas_normales_ejemplo.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<script type="text/javascript" src="_escolares_js.js"></script></body></html>

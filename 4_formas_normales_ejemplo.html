@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="exe_effects.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>4. Formas Normales: Ejemplo | Normalización: Ejemplo </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Eduvirtual UNAB" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.6 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="exe_effects.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-4"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">Normalización: Ejemplo</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Inicio</a></li>
+   <li><a href="1_introduccin.html" class="no-ch">1. Introducción</a></li>
+   <li><a href="2_normalizacin.html" class="no-ch">2. Normalización</a></li>
+   <li><a href="3_formas_normales.html" class="no-ch">3. Formas Normales</a></li>
+   <li id="active"><a href="4_formas_normales_ejemplo.html" class="active no-ch">4. Formas Normales: Ejemplo</a></li>
+   <li><a href="5_conclusiones_y_referencias.html" class="no-ch">5. Conclusiones y Referencias</a></li>
+   <li><a href="6_repasando.html" class="no-ch">6. Repasando</a></li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="3_formas_normales.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="5_conclusiones_y_referencias.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">4. Formas Normales: Ejemplo</h1></header>
+<article class="iDevice_wrapper FreeTextIdevice" id="id9">
+<div class="iDevice emphasis0">
+<div id="ta9_86" class="block iDevice_content">
+<p><img src="4.png" alt="" width="4044" height="1024" /></p>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id10">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Contenido</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta10_123_2" class="block iDevice_content">
+<div class="exe-text"><div class="exe-fx exe-paginated">
+<h2>Ejemplo</h2>
+<p><span style="font-size: 14pt; color: #000080;">Si partimos de los siguientes datos almacenados.</span></p>
+<p><img src="normalizacion-Pagina-2.drawio.svg" alt="" width="721" height="245" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+<p><span style="font-size: 14pt; color: #000080;">Se puede observar que existe redundancia de datos.</span></p>
+<h2>1FN. Identificar si hay grupos repetitivos</h2>
+<p><img src="normalizacion-Pagina-3.drawio.svg" alt="" width="721" height="245" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+<p><span style="font-size: 14pt; color: #000080;">Resultado de la 1FN:</span></p>
+<p><span style="font-size: 14pt;"><img src="normalizacion-Pagina-4.drawio.svg" alt="" width="537" height="168" style="display: block; margin-left: auto; margin-right: auto;" /></span></p>
+<p><span style="font-size: 14pt;"><img src="normalizacion-Pagina-5.drawio.svg" alt="" width="458" height="241" style="display: block; margin-left: auto; margin-right: auto;" /></span></p>
+<p style="text-align: justify;"><span style="font-size: 14pt; color: #000080;">Es importante resaltar que se conserva el número de matrícula en ambas tablas para tener la relación entre ellas, recordemos que la normalización nos dará como resultado una base de datos relacional.</span></p>
+<h2><span style="font-size: 15pt;">2FN. Eliminar dependencias funcionales</span></h2>
+<p><span style="font-size: 14pt; color: #000080;">Para iniciar con la segunda forma normal:</span></p>
+<ul>
+<li><span style="font-size: 14pt; color: #000080;">Las tablas deben estar en 1FN.</span></li>
+<li><span style="font-size: 14pt; color: #000080;">Identificar las dependencias funcionales y transitivas.</span></li>
+</ul>
+<p><span style="color: #000080;"><span style="font-size: 14pt;">Por lo tanto, se identifica que: </span><span style="font-size: 14pt;">Materia depende funcionalmente de Numero de materia, a su vez Materia no depende de Matricula por lo que son independientes. Con ello podemos separar las tablas.</span></span></p>
+<p><span style="font-size: 14pt;"><img src="3f1.svg" alt="" width="598" height="174" style="display: block; margin-left: auto; margin-right: auto;" /></span></p>
+<hr />
+<div class="exe-layout-2-cols exe-layout-2-50-50 exe-clear">
+<table border="0" style="height: 257px; width: 97.7091%; margin-left: auto; margin-right: auto;" height="212">
+<tbody>
+<tr style="height: 257px;">
+<td style="width: 27.0176%; height: 257px;"><img src="3f2.svg" width="451" height="284" style="display: block; margin-left: auto; margin-right: auto;" /></td>
+<td style="width: 19.4931%; text-align: left; height: 257px;"><span style="font-size: 14pt; color: #000080;">Se obtiene una tabla débil la cual contiene llaves foraneas</span></td>
+<td style="width: 34.6803%; height: 257px;"><img src="3f3.svg" width="500" height="239" style="display: block; margin-left: auto; margin-right: auto;" /></td>
+<td style="width: 18.809%; text-align: left; height: 257px;"><span style="font-size: 14pt; color: #000080;">Se convierte en una tabla fuerte</span></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><span style="font-size: 14pt; color: #000080;">Ahora que ya se cuenta con la separación de esas dependencias podemos seguir a la tercera forma normal.</span></p>
+<p><span style="font-size: 14pt; color: #000080;"><img src="3f1.svg" alt="" width="702" height="204" style="display: block; margin-left: auto; margin-right: auto;" /></span></p>
+<p style="text-align: justify;"><span style="font-size: 14pt; color: #000080;">Se observa en la tabla donde están los datos del estudiante aún se observa datos que pueden ser separados, como por ejemplo el nombre de la carrera ya que este no depende de los datos del estudiante. Lo que se presenta es una dependencia transitiva entre carrera y matricula. Por lo que podemos separar, quedando de la siguiente manera.</span></p>
+</div>
+<h2>3FN. Eliminar dependencias transitivas</h2>
+<p><img src="4f1.svg" alt="" width="598" height="174" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+<hr />
+<p><img src="4f2.svg" alt="" width="483" height="209" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+<hr />
+<p><img src="4f3.svg" alt="" width="440" height="278" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+<hr />
+<p><img src="4f4.svg" alt="" width="500" height="239" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+<h2>BCFN. Analiza todas las dependencias incluyendo atributos claves</h2>
+<p><span style="font-size: 14pt; color: #000080;">En la tabla donde aparecen los datos del alumno y el número de matrícula vemos que existe una dependencia aun ya que los datos del estudiante pueden separarse.</span></p>
+<p><img src="5f1.svg" alt="" width="499" height="145" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+<p><span style="font-size: 14pt; color: #000080;">Por lo que se tiene como resultado de la separación.</span></p>
+<p><span style="font-size: 14pt; color: #000080;"><img src="5f2.svg" alt="" width="499" height="145" style="display: block; margin-left: auto; margin-right: auto;" /></span></p>
+<p><span style="font-size: 14pt; color: #000080;"><img src="5f3.svg" alt="" width="499" height="216" style="display: block; margin-left: auto; margin-right: auto;" /></span></p>
+<hr />
+<p><span style="font-size: 14pt; color: #000080;">Base de datos resultante:</span></p>
+<table border="1" style="height: 54px; width: 67.277%; margin-left: auto; margin-right: auto;">
+<tbody>
+<tr style="height: 18px;">
+<td style="width: 33.7042%; height: 18px;"><img src="6f1.svg" alt="" width="499" height="216" /></td>
+<td style="width: 33.5733%; height: 18px;"><img src="6f2.svg" alt="" width="499" height="216" style="display: block; margin-left: auto; margin-right: auto;" /></td>
+</tr>
+<tr style="height: 18px;">
+<td style="width: 67.2775%; height: 18px;" colspan="2"><img src="6f3.svg" alt="" width="530" height="154" style="display: block; margin-left: auto; margin-right: auto;" /></td>
+</tr>
+<tr style="height: 18px;">
+<td style="width: 33.7042%; height: 18px;"><img src="6f4.svg" alt="" width="405" height="255" style="display: block; margin-left: auto; margin-right: auto;" /></td>
+<td style="width: 33.5733%; height: 18px;"><img src="6f5.svg" alt="" width="500" height="239" style="display: block; margin-left: auto; margin-right: auto;" /></td>
+</tr>
+</tbody>
+</table>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="3_formas_normales.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="5_conclusiones_y_referencias.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<script type="text/javascript" src="_escolares_js.js"></script></body></html>
